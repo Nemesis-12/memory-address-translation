@@ -65,5 +65,16 @@ if pageNum in pageTable.keys():
   print(f"Logical Address: {hex(addrInt)} => Page No: {hex(physAddr)[:4]}, Offset: 0x{hex(offset)[3:]}")
 ```
 
+Here is what the output should look like:
+
+```console
+Enter Logical Address (or 'q' to quit): 0xABCD
+A page fault occurred! Page 42 is not in the table. Loading the page with frame 2
+Logical Address: 0xabcd => Page No: 0xbc, Offset: 0xcd
+Enter Logical Address (or 'q' to quit): 0x3A7F
+Logical Address: 0x3a7f => Page No: 0x1a, Offset: 0x7f
+Enter Logical Address (or 'q' to quit): q
+```
+
 ## Contribution
 This project is an educational tool and is open to contributions. If you have suggestions or improvements, create a pull request by forking the repository.
