@@ -13,7 +13,7 @@ Clone the repository or download the source code onto your local machine. Naviga
 Run the following program on the terminal:
 
 ```console
-python process.py
+python memory.py
 ```
 
 When the program starts, you will be asked to enter the logical address as a hexadecimal number. The address is then converted to an integer value by the following line:
